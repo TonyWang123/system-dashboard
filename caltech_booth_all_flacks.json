@@ -1,0 +1,809 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"Clock\"][\"time_string_value\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk-dtn1",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Read / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"disk\"][\"read_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Written / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"disk\"][\"write_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "I/O-dtn1",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Sent / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"io\"][\"sent_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Received / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"io\"][\"received_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "CPU-dtn1",
+			"width": 1,
+			"row": {
+				"3": 5
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn1\"][\"cpu\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "RAM-dtn1",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn1\"][\"ram\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk Usage-dtn1",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Space Used",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"disk\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Disk Total",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"disk\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Used-dtn1",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"ram\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": false,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Total-dtn1",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn1\"][\"ram\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk-dtn2",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Read / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"disk\"][\"read_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Written / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"disk\"][\"write_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "I/O-dtn2",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Sent / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"io\"][\"sent_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Received / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"io\"][\"received_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "CPU-dtn2",
+			"width": 1,
+			"row": {
+				"3": 5
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn2\"][\"cpu\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "RAM-dtn2",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn2\"][\"ram\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk Usage-dtn2",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Space Used",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"disk\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Disk Total",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"disk\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Used-dtn2",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"ram\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": false,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Total-dtn2",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn2\"][\"ram\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+        {
+			"title": "Disk-dtn3",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Read / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"disk\"][\"read_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Written / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"disk\"][\"write_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "I/O-dtn3",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Sent / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"io\"][\"sent_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Received / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"io\"][\"received_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "CPU-dtn3",
+			"width": 1,
+			"row": {
+				"3": 5
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn3\"][\"cpu\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "RAM-dtn3",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn3\"][\"ram\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk Usage-dtn3",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Space Used",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"disk\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Disk Total",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"disk\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Used-dtn3",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"ram\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": false,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Total-dtn3",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn3\"][\"ram\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+        {
+			"title": "Disk-dtn4",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Read / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"disk\"][\"read_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Written / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"disk\"][\"write_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "I/O-dtn4",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Sent / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"io\"][\"sent_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Bytes Received / Sec",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"io\"][\"received_bytes_sec\"] / 1000000).toFixed(3)",
+						"sparkline": true,
+						"animate": false,
+						"units": "MB"
+					}
+				}
+			]
+		},
+		{
+			"title": "CPU-dtn4",
+			"width": 1,
+			"row": {
+				"3": 5
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn4\"][\"cpu\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "RAM-dtn4",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"System Dashboard Flask-dtn4\"][\"ram\"][\"percent\"].toFixed(1)",
+						"sparkline": true,
+						"animate": false,
+						"units": "%"
+					}
+				}
+			]
+		},
+		{
+			"title": "Disk Usage-dtn4",
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": "1",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Space Used",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"disk\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Disk Total",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"disk\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 11
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Used-dtn1",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"ram\"][\"used\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": false,
+						"units": "GB"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "RAM Total-dtn1",
+						"size": "regular",
+						"value": "(datasources[\"System Dashboard Flask-dtn4\"][\"ram\"][\"total\"] / (1000 * 1024 * 1024)).toFixed(2)",
+						"sparkline": false,
+						"animate": true,
+						"units": "GB"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "System Dashboard Flask-dtn1",
+			"type": "JSON",
+			"settings": {
+				"url": "http://140.221.221.115:6002",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+        {
+			"name": "System Dashboard Flask-dtn2",
+			"type": "JSON",
+			"settings": {
+				"url": "http://140.221.221.116:6002",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+        {
+			"name": "System Dashboard Flask-dtn3",
+			"type": "JSON",
+			"settings": {
+				"url": "http://140.221.221.117:6002",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+        {
+			"name": "System Dashboard Flask-dtn4",
+			"type": "JSON",
+			"settings": {
+				"url": "http://140.221.221.118:6002",
+				"use_thingproxy": false,
+				"refresh": 1,
+				"method": "GET"
+			}
+		},
+		{
+			"name": "Clock",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		}
+	],
+	"columns": 3
+}
